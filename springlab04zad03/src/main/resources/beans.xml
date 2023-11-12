@@ -1,0 +1,215 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="osoba1" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Jillian"/>
+        <property name="last_name" value="Palethorpe"/>
+        <property name="email" value="jpalethorpe0@accuweather.com"/>
+        <property name="company_name" value="Layo"/>
+    </bean>
+
+    <bean id="osoba2" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Mohandas"/>
+        <property name="last_name" value="Branchet"/>
+        <property name="email" value="mbranchet1@marriott.com"/>
+        <property name="company_name" value="Gigabox"/>
+    </bean>
+
+    <bean id="osoba3" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Philly"/>
+        <property name="last_name" value="Guyton"/>
+        <property name="email" value="pguyton2@shareasale.com"/>
+        <property name="company_name" value="Quatz"/>
+    </bean>
+
+    <bean id="osoba4" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Kirsteni"/>
+        <property name="last_name" value="Bentham3"/>
+        <property name="email" value="kbentham3@loc.gov"/>
+        <property name="company_name" value="Quaxo"/>
+    </bean>
+
+    <bean id="osoba5" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Cosetta"/>
+        <property name="last_name" value="Rolfi"/>
+        <property name="email" value="crolfi4@photobucket.com"/>
+        <property name="company_name" value="Riffwire"/>
+    </bean>
+
+    <bean id="osoba6" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Hedvig"/>
+        <property name="last_name" value="Firminger"/>
+        <property name="email" value="hfirminger5@netscape.com"/>
+        <property name="company_name" value="Quire"/>
+    </bean>
+
+    <bean id="osoba7" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Lorna"/>
+        <property name="last_name" value="Caseley"/>
+        <property name="email" value="lcaseley6@illinois.edu"/>
+        <property name="company_name" value="Skinix"/>
+    </bean>
+
+    <bean id="osoba8" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Arty"/>
+        <property name="last_name" value="Nesey"/>
+        <property name="email" value="anesey7@washington.edu"/>
+        <property name="company_name" value="Dabvine"/>
+    </bean>
+
+    <bean id="osoba9" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Dugald"/>
+        <property name="last_name" value="Fechnie"/>
+        <property name="email" value="dfechnie8@feedburner.com"/>
+        <property name="company_name" value="Twitterbridge"/>
+    </bean>
+
+    <bean id="osoba10" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Halley"/>
+        <property name="last_name" value="Gadaud"/>
+        <property name="email" value="hgadaud9@sohu.com"/>
+        <property name="company_name" value="Oyope"/>
+    </bean>
+
+    <bean id="osoba11" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Kamilah"/>
+        <property name="last_name" value="Wolters"/>
+        <property name="email" value="kwoltersa@google.es"/>
+        <property name="company_name" value="Shuffledrive"/>
+    </bean>
+
+    <bean id="osoba12" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Meredeth"/>
+        <property name="last_name" value="Bedward"/>
+        <property name="email" value="mbedwardb@uiuc.edu"/>
+        <property name="company_name" value="Meeveo"/>
+    </bean>
+
+    <bean id="osoba13" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Aloin"/>
+        <property name="last_name" value="Rigglesford"/>
+        <property name="email" value="arigglesfordc@cafepress.com"/>
+        <property name="company_name" value="Skyble"/>
+    </bean>
+
+    <bean id="osoba14" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Petunia"/>
+        <property name="last_name" value="Chevolleau"/>
+        <property name="email" value="pchevolleaud@cnn.com"/>
+        <property name="company_name" value="Zoombeat"/>
+    </bean>
+
+    <bean id="osoba15" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Sunshine"/>
+        <property name="last_name" value="Haggerty"/>
+        <property name="email" value="shaggertye@webnode.com"/>
+        <property name="company_name" value="Digitube"/>
+    </bean>
+
+    <bean id="osoba16" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Eberto"/>
+        <property name="last_name" value="Keaves"/>
+        <property name="email" value="ekeavesf@tumblr.com"/>
+        <property name="company_name" value="Voonte"/>
+    </bean>
+
+    <bean id="osoba17" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Tasha"/>
+        <property name="last_name" value="Shemwell"/>
+        <property name="email" value="tshemwellg@prlog.org"/>
+        <property name="company_name" value="Brainbox"/>
+    </bean>
+
+    <bean id="osoba18" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Philomena"/>
+        <property name="last_name" value="Diloway"/>
+        <property name="email" value="pdilowayh@opensource.org"/>
+        <property name="company_name" value="Zoozzy"/>
+    </bean>
+
+    <bean id="osoba19" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Raymond"/>
+        <property name="last_name" value="Behnecke"/>
+        <property name="email" value="rbehneckei@zdnet.com"/>
+        <property name="company_name" value="Realmix"/>
+    </bean>
+
+    <bean id="osoba20" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Kirbie"/>
+        <property name="last_name" value="Wrettum"/>
+        <property name="email" value="kwrettumj@slideshare.net"/>
+        <property name="company_name" value="Browsetype"/>
+    </bean>
+
+    <bean id="osoba21" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Edie"/>
+        <property name="last_name" value="Pledger"/>
+        <property name="email" value="epledgerk@chron.com"/>
+        <property name="company_name" value="Voonder"/>
+    </bean>
+
+    <bean id="osoba22" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Brooke"/>
+        <property name="last_name" value="Ratcliff"/>
+        <property name="email" value="bratcliffl@dailymotion.com"/>
+        <property name="company_name" value="Livetube"/>
+    </bean>
+
+    <bean id="osoba23" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Kristy"/>
+        <property name="last_name" value="Burnsyde"/>
+        <property name="email" value="kburnsydem@dailymotion.com"/>
+        <property name="company_name" value="Oyoloo"/>
+    </bean>
+
+    <bean id="osoba24" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Vinnie"/>
+        <property name="last_name" value="Arp"/>
+        <property name="email" value="varpn@github.io"/>
+        <property name="company_name" value="Talane"/>
+    </bean>
+
+    <bean id="osoba25" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Diana"/>
+        <property name="last_name" value="Wickrath"/>
+        <property name="email" value="dwickratho@liveinternet.ru"/>
+        <property name="company_name" value="Ooba"/>
+    </bean>
+
+    <bean id="osoba26" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Gasper"/>
+        <property name="last_name" value="Gane"/>
+        <property name="email" value="gganep@usnews.com"/>
+        <property name="company_name" value="Jabbersphere"/>
+    </bean>
+
+    <bean id="osoba27" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Jere"/>
+        <property name="last_name" value="Maberley"/>
+        <property name="email" value="jmaberleyq@photobucket.com"/>
+        <property name="company_name" value="Digitube"/>
+    </bean>
+
+    <bean id="osoba28" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Chrystal"/>
+        <property name="last_name" value="Havoc"/>
+        <property name="email" value="chavocr@yahoo.com"/>
+        <property name="company_name" value="Mymm"/>
+    </bean>
+
+    <bean id="osoba29" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Haze"/>
+        <property name="last_name" value="Manske"/>
+        <property name="email" value="hmanskes@trellian.com"/>
+        <property name="company_name" value="Katz"/>
+    </bean>
+
+    <bean id="osoba30" class="com.ug.zad.springlab04zad03.domain.Person">
+        <property name="first_name" value="Juline"/>
+        <property name="last_name" value="Merchant"/>
+        <property name="email" value="jmerchantt@123-reg.co.uk"/>
+        <property name="company_name" value="Browsetype"/>
+    </bean>
+
+</beans>
