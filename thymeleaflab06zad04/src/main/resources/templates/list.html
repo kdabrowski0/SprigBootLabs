@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+</head>
+<body>
+<h2>User List</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>User Type</th>
+        <th>Registration Date</th>
+        <th>Days Since Registration</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user, iterStat : ${users}">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+        <td th:switch="${user.userType.toString()}">
+            <span th:case="'ADMIN'">Administrator</span>
+            <span th:case="'REGISTERED'">Zarejestrowany</span>
+            <span th:case="'GUEST'">Gość</span>
+            <span th:case="*">Nieznany</span>
+        </td>
+        <td th:text="${#dates.format(user.registrationDate, 'dd/MM/yyyy HH:mm')}"></td>
+        <td th:text="${T(java.time.temporal.ChronoUnit).DAYS.between(user.registrationDate.toInstant(), T(java.time.Clock).systemUTC().instant())}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
