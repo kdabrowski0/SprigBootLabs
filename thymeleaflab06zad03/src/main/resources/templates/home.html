@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+</head>
+<body>
+    <div>
+        <p th:if="${user.age < 30 and daysTillRegistration > 200}">Witaj [[${user.name}]]!
+            od Twojej rejestracji minęło [[${daysTillRegistration}]] dni.</p>
+        <h1>Dane użytkownika</h1>
+        <p th:text="${user.name}"></p>
+        <p th:text="${user.id}"></p>
+        <p th:if="${user.age > 35}">Powyżej średniej [[${user.age}]]</p>
+        <p th:unless="${user.age > 35}">[[${user.age}]]</p>
+        <p th:switch="${user.userType.toString()}">
+            <span th:case="'ADMIN'">Administrator</span>
+            <span th:case="'USER'">Użytkownik</span>
+            <span th:case="*">Nieznany</span>
+        </p>
+        <p th:text="${#dates.format(user.registrationDate, 'yyyy-MM-dd HH:mm')}"></p>
+    </div>
+    <div>
+        <p>Czy artur na stronie: <span th:text="${user.name == 'Addrtur' ? 'tak' : 'nie'}"></span>   </p>
+    </div>
+</body>
+</html>
