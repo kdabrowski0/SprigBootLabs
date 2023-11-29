@@ -7,7 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
+import java.util.ArrayList;
+import java.util.List;
 import javax.validation.Valid;
 @Slf4j
 @Controller
@@ -19,12 +20,18 @@ public class UserController {
     }
 
     @PostMapping("/createUser")
-    public String registerUser(@Valid User user, Errors errors) {
+    public String registerUser(@Valid User user, Errors errors, Model model) {
         if(errors.hasErrors()) {
             return "form";
         }
         log.info("User created: " + user);
-        return "redirect:/";
+
+        List<User> registeredUsers = new ArrayList<>();
+        registeredUsers.add(user);
+
+        model.addAttribute("registeredUsers", registeredUsers);
+
+        return "form";
     }
 
 }

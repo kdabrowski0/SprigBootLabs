@@ -59,6 +59,25 @@
         <br/>
         <input type="submit" value="Submit"/>
     </form>
+    <h2>Registered Users</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Postal Code</th>
+            <th>User Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="registeredUser : ${registeredUsers}">
+            <td th:text="${registeredUser.name}"></td>
+            <td th:text="${registeredUser.age}"></td>
+            <td th:text="${registeredUser.postalCode}"></td>
+            <td th:text="${registeredUser.userType}"></td>
+        </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
