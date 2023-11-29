@@ -20,17 +20,18 @@ public class PersonController {
     }
 
     @GetMapping("/create")
-    public String personForm(Model model){
+    public String personForm(Model model) {
         model.addAttribute("person", new Person());
         return "personForm";
     }
 
     @PostMapping("/create")
     public String processOrder(@Valid Person person, Errors errors){
-        if(errors.hasErrors()){
+        if(errors.hasErrors()) {
             return "personForm";
         }
-        log.info("Person created: " + person);
+        log.info("Person submitted: " + person);
         return "redirect:/";
     }
 }
+
